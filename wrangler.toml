@@ -2,3 +2,8 @@ name = "overland-ingress"
 main = "src/index.ts"
 
 compatibility_date = "2022-11-22"
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "OVERLAND_V1"
+database_id = "cb1f3168-976f-4926-84b0-6f04b551902a"
