@@ -93,7 +93,7 @@ export default {
         current.properties.horizontal_accuracy,
         current.properties.timestamp,
         current.properties.altitude,
-        current.properties.battery_level,
+        current.properties.battery_state,
       ).all();
 
       return new Response(JSON.stringify(results), { status: 200 });
