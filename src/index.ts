@@ -84,8 +84,9 @@ export default {
         INSERT INTO locations (latitude, longitude, speed, batteryLevel, wifi, verticalAccuracy, horizontalAccuracy, timestamp, altitude, batteryState)
         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)
       `).bind(
-        current.geometry.coordinates[0],
+        /// WHYYYY
         current.geometry.coordinates[1],
+        current.geometry.coordinates[0],
         current.properties.speed,
         current.properties.battery_level,
         current.properties.wifi,
@@ -110,8 +111,9 @@ export default {
                 INSERT INTO locations (latitude, longitude, speed, batteryLevel, wifi, verticalAccuracy, horizontalAccuracy, timestamp, altitude, batteryState)
                 VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)
               `).bind(
-                current.geometry.coordinates[0],
+                /// WHYYYY
                 current.geometry.coordinates[1],
+                current.geometry.coordinates[0],
                 current.properties.speed,
                 current.properties.battery_level,
                 current.properties.wifi,
